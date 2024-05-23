@@ -3,7 +3,7 @@ import pickle
 import streamlit as st 
 
 # Load the model
-model_path = 'predictor.sav'
+model_path = 'savedmodel.sav'
 loaded_model = pickle.load(open(model_path, 'rb'))
 
 # Creating a function for Prediction
