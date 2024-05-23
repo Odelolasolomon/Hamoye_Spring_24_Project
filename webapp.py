@@ -3,7 +3,7 @@ import pickle
 import streamlit as st 
 
 # Load the model
-model_path = 'savedmodel.sav'
+model_path = 'saved_model.sav'
 loaded_model = pickle.load(open(model_path, 'rb'))
 
 # Creating a function for Prediction
@@ -37,7 +37,8 @@ def main():
 
     # Code for Prediction
     if st.button('Predict school completion rate'):
-        input_data = [pspmlsrbs, gip, ofsalssa, ppp_2_cg, pc_24_59_thlp, nerece, nerpp, pyalmlpdl, earcpehp_twentyfiveplus, ptmrepeagpi, geeduv, pcypepfm, pcypelsfr]
+        input_data = [pspmlsrbs, gip, ofsalssa, ppp_2_cg, pc_24_59_thlp, nerece, nerpp, pyalmlpdl, earcpehp_twentyfiveplus,
+                       ptmrepeagpi, geeduv, pcypepfm, pcypelsfr]
         prediction = completionrate_prediction(input_data)
         st.success(f'Predicted school completion rate is : {prediction}')
 
