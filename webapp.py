@@ -38,7 +38,7 @@ def main():
     
     
     # Code for Prediction
-    if st.button('Predict if patient has heart disease'):
+    if st.button('Predict school completion rate'):
         prediction = completionrate_prediction(['ptwmrseagpi', 'ppels_2_cg',
                                               'ofsussa','earcuse_twnetyfive','pseb_12lse',
                                         'naspi','earclshp_twentyfive','pspmprbs','gils',
